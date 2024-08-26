@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../imagenes/fondoinicio.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.register-wrapper {
+    background-color: rgba(196, 196, 196, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajusta el ancho para ser más responsive */
+    max-width: 850px; /* Limita el ancho máximo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las dos columnas */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    gap: 30px; /* Espacio entre las columnas */
+}
+
+.register-column {
+    width: 100%; /* Cada columna ocupa el 100% de su espacio disponible */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos dentro de cada columna */
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Adaptación de estilos a las nuevas clases */
+.run, .nombres, .apellidos, .direccion, .comuna, .provincia, .region, .fechaNac, .sexo, .correo, .numTel {
+    display: flex;
+    flex-direction: column;
+}
+
+.run label, .nombres label, .apellidos label, .direccion label, .comuna label, .provincia label, .region label, .fechaNac label, .sexo label, .correo label, .numTel label {
+    margin-bottom: 5px;
+}
+
+.run input, .nombres input, .apellidos input, .direccion input, .comuna input, .provincia input, .region select, .fechaNac input, .sexo select, .correo input, .numTel input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón de registrar */
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px; /* Margen superior para separar del último campo */
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Estilos para la caja de confirmación */
+#confirmation-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 520px;
+    display: none; /* Inicialmente oculta */
+}
+
+#confirmation-box h3 {
+    margin-top: 0;
+}
+
+#data-display {
+    margin-bottom: 20px;
+}
+
+#confirmation-box button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+/* Botón Continuar */
+#continue-btn {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#continue-btn:hover {
+    background-color: #4cae4c;
+}
+
+/* Botón Editar */
+#edit-btn {
+    background-color: #0011fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#edit-btn:hover {
+    background-color: #08176c;
+}
