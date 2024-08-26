@@ -41,15 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     continueBtn.addEventListener('click', () => {
-        // Aquí puedes manejar el envío final del formulario o realizar acciones adicionales
-        alert('Registro completado.');
-        // Puedes limpiar el formulario y ocultar la caja de confirmación si es necesario
-        confirmationBox.style.display = 'none';
-        form.reset(); // Resetea el formulario
+        // Redirige a esta URL
+        window.location.href = 'https://andresinh0.github.io/inicioSesionSushi/';
     });
 
     editBtn.addEventListener('click', () => {
-        // Oculta la caja de confirmación para permitir editar los datos
+        // Oculta la caja de confirmación para poder editar los datos
         confirmationBox.style.display = 'none';
     });
 });
