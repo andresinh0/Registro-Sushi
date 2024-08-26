@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form'); // Selecciona el formulario
-    const confirmationBox = document.getElementById('confirmation-box'); // Selecciona la caja de confirmación
+    const form = document.querySelector('form'); // Se selecciona el formulario
+    const confirmationBox = document.getElementById('confirmation-box'); // Se selecciona la caja de confirmación
     const continueBtn = document.getElementById('continue-btn');
     const editBtn = document.getElementById('edit-btn');
 
     form.addEventListener('submit', (event) => {
-        event.preventDefault(); // Previene el envío del formulario
+        event.preventDefault(); // Evita el envío del formulario
 
         // Recolecta los datos del formulario
         const run = document.getElementById('run').value;
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     continueBtn.addEventListener('click', () => {
-        // Redirige a esta URL
+        // Redirige a la URL
         window.location.href = 'https://andresinh0.github.io/inicioSesionSushi/';
     });
 
