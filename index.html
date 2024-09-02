@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="imagenes/logo2.ico" type="image/x-icon">
+    <link rel="icon" href="../imagenes/logo2.ico" type="image/x-icon">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -76,13 +76,17 @@
                             <option value="Femenino">Femenino</option>
                         </select>
                     </div>
+                    <div class="input-group numTel">
+                        <label for="numTel">Número de Teléfono:</label>
+                        <input type="tel" id="numTel" name="numTel" placeholder="Ej: +56 912345678" required>
+                    </div>
                     <div class="input-group correo">
                         <label for="correo">Correo Electrónico:</label>
                         <input type="email" id="correo" name="correo" placeholder="Ej: correo@ejemplo.com" required>
                     </div>
-                    <div class="input-group numTel">
-                        <label for="numTel">Número de Teléfono:</label>
-                        <input type="tel" id="numTel" name="numTel" placeholder="Ej: +56 912345678" required>
+                    <div class="input-group clave">
+                        <label for="clave">Contraseña:</label>
+                        <input type="text" id="clave" name="clave" placeholder="Ej: Contraseña" required>
                     </div>
                     <button type="submit">Registrar</button>
                 </div>
@@ -90,7 +94,7 @@
         </div>
     </div>
 
-    <!--Caja para confirmar los datos-->
+    <!-- Caja para confirmar los datos -->
     <div id="confirmation-box" class="hidden">
         <div class="confirmation-content">
             <h3>Confirmación de Datos</h3>
