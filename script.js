@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     continueBtn.addEventListener('click', () => {
         // Redirige a la URL
-        window.location.href?"https://andresinh0.github.io/inicioSesionSushi/";
+        window.location.href = "https://andresinh0.github.io/inicioSesionSushi/";
     });
 
     editBtn.addEventListener('click', () => {
