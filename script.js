@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         // Muestra la caja de confirmación
-        confirmationBox.style.display = 'block';
+        confirmationBox.classList.remove('hidden');
     });
 
     continueBtn.addEventListener('click', () => {
