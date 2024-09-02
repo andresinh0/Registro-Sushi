@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../imagenes/fondoinicio.jpg');
+    background-image: url('imagenes/fondoinicio.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
