@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form'); // Se selecciona el formulario
-    const confirmationBox = document.getElementById('confirmation-box'); // Se selecciona la caja de confirmación
+    const form = document.querySelector('form'); // Selecciona el formulario
+    const confirmationBox = document.getElementById('confirmation-box'); // Selecciona la caja de confirmación
     const continueBtn = document.getElementById('continue-btn');
     const editBtn = document.getElementById('edit-btn');
 
     form.addEventListener('submit', (event) => {
-        event.preventDefault(); // Evita el envío del formulario
+        event.preventDefault(); // Previene el envío del formulario
 
         // Recolecta los datos del formulario
         const run = document.getElementById('run').value;
@@ -17,8 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const region = document.getElementById('region').value;
         const fechaNac = document.getElementById('fechaNac').value;
         const sexo = document.getElementById('sexo').value;
-        const correo = document.getElementById('correo').value;
         const numTel = document.getElementById('numTel').value;
+        const correo = document.getElementById('correo').value;
+        const clave = document.getElementById('clave').value;
 
         // Muestra los datos en la caja de confirmación
         const dataDisplay = document.getElementById('data-display');
@@ -32,8 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Región:</strong> ${region}</p>
             <p><strong>Fecha de Nacimiento:</strong> ${fechaNac}</p>
             <p><strong>Sexo:</strong> ${sexo}</p>
-            <p><strong>Correo Electrónico:</strong> ${correo}</p>
             <p><strong>Número de Teléfono:</strong> ${numTel}</p>
+            <p><strong>Correo Electrónico:</strong> ${correo}</p>
+            <p><strong>Contraseña:</strong> ${clave}</p>
         `;
 
         // Muestra la caja de confirmación
@@ -42,11 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     continueBtn.addEventListener('click', () => {
         // Redirige a la URL
-        window.location.href = 'https://andresinh0.github.io/inicioSesionSushi/';
+        window.location.href?"https://andresinh0.github.io/inicioSesionSushi/";
     });
 
     editBtn.addEventListener('click', () => {
-        // Oculta la caja de confirmación para poder editar los datos
+        // Oculta la caja de confirmación para permitir editar los datos
         confirmationBox.style.display = 'none';
     });
 });
