@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('imagenes/fondoinicio.jpg');
+    background-image: url('../imagenes/fondoinicio.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -14,7 +14,7 @@ body {
     background-color: rgba(196, 196, 196, 0.9);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.187), 0 0 20px rgba(255, 255, 255, 0.539);
     width: 90%; /* Ajusta el ancho para ser más responsive */
     max-width: 850px; /* Limita el ancho máximo */
     display: flex;
@@ -43,16 +43,16 @@ body {
 }
 
 /* Adaptación de estilos a las nuevas clases */
-.run, .nombres, .apellidos, .direccion, .comuna, .provincia, .region, .fechaNac, .sexo, .correo, .numTel {
+.run, .nombres, .apellidos, .direccion, .comuna, .provincia, .region, .fechaNac, .sexo, .numTel, .correo, .clave {
     display: flex;
     flex-direction: column;
 }
 
-.run label, .nombres label, .apellidos label, .direccion label, .comuna label, .provincia label, .region label, .fechaNac label, .sexo label, .correo label, .numTel label {
+.run label, .nombres label, .apellidos label, .direccion label, .comuna label, .provincia label, .region label, .fechaNac label, .sexo label, .numTel input, .correo label, .clave input {
     margin-bottom: 5px;
 }
 
-.run input, .nombres input, .apellidos input, .direccion input, .comuna input, .provincia input, .region select, .fechaNac input, .sexo select, .correo input, .numTel input {
+.run input, .nombres input, .apellidos input, .direccion input, .comuna input, .provincia input, .region select, .fechaNac input, .sexo select, .numTel input, .correo input, .clave input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -81,7 +81,7 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url('imagenes/fondo.png');
+    background-image: url('../imagenes/fondo.png');
     background-size: cover;
     background-position: center;
     color: white;
